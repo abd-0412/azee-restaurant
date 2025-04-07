@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   <!-- Add this to your head section if not already present -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css files/header.css">
+    <link rel="stylesheet" href="css files/home.css">
+    <link rel="stylesheet" href="css files/special.css">
+    <link rel="stylesheet" href="css files/menu.css">
+    <link rel="stylesheet" href="css files/review.css">
+    <link rel="stylesheet" href="css files/contact.css">
+    <link rel="stylesheet" href="css files/about.css">
+    <link rel="stylesheet" href="css files/footer.css">
+
+    <!-- title -->
+    <title>Abd's Restuarant</title>
+</head>
+<body>
+    <!--Header section-->
+    <section class="header-section">
+        <a href="" class="logo">Azee <span class="restuarant">Restaurant</span></a>
+        <nav class="navigate-btns">
+            <ul class="nav-links">
+                <li class="links"><a href="#home-section">Home</a></li>
+                <li class="links"><a href="#special-section">Menu</a></li>
+                <li class="links"><a href="#about-us-section">About Us</a></li>
+                <li class="links"><a href="#client-review-section">Reviews</a></li>
+                <li class="links"><a href="#contact-section">Contact Us</a></li>
+                <a href="login2.html" class="mobile-login" id="btn">Login</a>
+            </ul>
+        </nav>
+        <div id="nav-right">
+            <i class='bx bx-menu' id="menu-icon"></i>
+        </div>
+    </section>
+
+    <!--home section-->
+     <section class="home-section"id="home-section">
+        <div class="home-img">
+            <img src="images/home-img.png" alt="home food image">
+        </div>
+        <div class="home-container">
+            <div class="home-text-container">
+                <h1 class="meet">Flavors That Delight,<span class="taste">Moments to Remember!</span></h1>
+                <h1 class="main-txt">At Azee Restaurant, we serve delicious flavors made with love.Every dish is a perfect blend of taste,tradition and freshness.Come,savor the best!</h1>
+            </div>
+            <div class="home-contact">
+                <a href="#menu-section" class="btn">Get Started!</a>
+            </div>
+        </div>
+     </section>
+
+     <!-- special section -->
+     <section class="special-section" id="special-section">
+        <div class="special-header">
+            <h1 class="special-title">Our Special Dishes</h1>
+        <p class="special-description">Experience the best of our kitchen with handpicked specialties,made fresh and bursting with rich flavors.A perfect feast for every food lover!</p>
+        </div>
+        <div class="special-container">
+            <div class="special-items">
+                <img src="images/special-1.png" alt="special food">
+                <h4>Crispy Chicken Fry</h4>
+                <p>Golden-fried chicken,crispy on the outside and juicy inside,bursting with delicious bold spices.</p>
+                <div class="special-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star'></i>
+                </div>
+                <div class="special-footer">
+                    <p class="food-price">₹250.25</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="special-items">
+                <img src="images/special-2.png" alt="special food">
+                <h4>Pepper Mutton Masala</h4>
+                <p>Tender mutton roasted with crushed black pepper and aromatic spices for a smoky,spicy kick.</p>
+                <div class="special-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <div class="special-footer">
+                    <p class="food-price">₹150.50</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="special-items">
+                <img src="images/special-3.png" alt="special food">
+                <h4>Dum Chicken Biryani</h4>
+                <p>Slow-cooked, aromatic biryani infused with saffron,rich spices and juicy,marinated chicken.</p>
+                <div class="special-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star-half star-rating'></i>
+                </div>
+                <div class="special-footer">
+                    <p class="food-price">₹225.00</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+     </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section" id="menu-section">
+        <div class="menu-header">
+            <h1 class="menu-title">Our Menu</h1>
+            <p class="menu-description">Explore our delicious offerings categorized by meal type. Click on the buttons below to filter our menu.</p>
+        </div>
+        
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+            <button class="filter-btn" data-filter="lunch">Lunch</button>
+            <button class="filter-btn" data-filter="dinner">Dinner</button>
+        </div>
+        
+        <!-- Menu Items Container -->
+        <div class="menu-container">
+            <!-- Breakfast Items -->
+            <div class="menu-items" data-category="breakfast">
+                <img src="images4/breakfast-1.png" alt="Chicken Gravy Delight">
+                <h4> Chicken Gravy Delight</h4>
+                <p>Soft idlis paired with spicy,flavorful chicken curry</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star-half star-rating'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type nonveg">NON-VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 2 Persons</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹299.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+            
+            <div class="menu-items" data-category="breakfast">
+                <img src="images4/breakfast-2.png" alt="Royal Paneer Curry">
+                <h4>Royal Paneer Curry</h4>
+                <p>Cottage cheese simmered in creamy, spiced tomato sauce.</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type veg">VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 2 Persons</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹249.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+
+            <div class="menu-items" data-category="breakfast">
+                <img src="images4/breakfast-3.png" alt="Mutton Masala Idly">
+                <h4>Mutton Masala Idly</h4>
+                <p>Steamed idlis served with rich and hearty mutton gravy</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type nonveg">NON-VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 1 Person</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹199.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+
+            <div class="menu-items" data-category="breakfast">
+                <img src="images4/breakfast-4.png" alt="Fruit Zing Bowl">
+                <h4>Fruit Zing Bowl</h4>
+                <p>Seasonal fruits mixed with honey and a citrusy twist.</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type veg">VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 1 Person</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹149.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+
+            <div class="menu-items" data-category="breakfast">
+                <img src="images4/breakfast-5.png" alt="Tokyo Street Noodles">
+                <h4>Tokyo Street Noodles</h4>
+                <p>Wok-tossed noodles with veggies in zesty Japanese sauce.</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type nonveg">NON-VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 1 Person</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹219.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+
+            <div class="menu-items" data-category="breakfast">
+                <img src="images4/breakfast-6.png" alt="Spicy Channa Bowl">
+                <h4>Spicy Channa Bowl</h4>
+                <p>Tangy chickpeas slow-cooked in rich tomato-onion masala</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type veg">VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 1 Person</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹159.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+
+            <div class="menu-items" data-category="breakfast">
+                <img src="images4/breakfast-7.png" alt="Soft Wheat Chapathi">
+                <h4> Soft Wheat Chapathi</h4>
+                <p>Warm, fluffy chapathis served fresh off the tawa.</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type veg">VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 1 Person</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹129.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+            
+            <!-- Lunch Items -->
+            <div class="menu-items" data-category="lunch">
+                <img src="images3/lunch-1.png" alt="Hyderabadi Dum Magic">
+                <h4> Hyderabadi Dum Magic</h4>
+                <p>Aromatic rice layered with juicy chicken and bold spices.</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type nonveg">NON-VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 4 Persons</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹899.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+
+            <div class="menu-items" data-category="lunch">
+                <img src="images3/lunch-2.png" alt=" Madras Mutton Roast">
+                <h4> Madras Mutton Roast</h4>
+                <p>Tender mutton chunks roasted in rich South Indian masala.</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type nonveg">NON-VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 2 Persons</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹489.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+
+            <div class="menu-items" data-category="lunch">
+                <img src="images3/lunch-3.png" alt="Paneer Rice Combo">
+                <h4>Paneer Rice Combo</h4>
+                <p>Steamed white rice served with rich and creamy paneer gravy.</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type veg">VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 2 Persons</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹289.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+
+            <div class="menu-items" data-category="lunch">
+                <img src="images3/lunch-4.png" alt=" Spicy Chicken Wings">
+                <h4> Spicy Chicken Wings</h4>
+                <p>Crispy wings coated in hot, smoky marinade.</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type nonveg">NON-VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 2 Persons</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹279.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+
+            <div class="menu-items" data-category="lunch">
+                <img src="images3/lunch-5.png" alt="Coastal Prawn Kolambu">
+                <h4>Coastal Prawn Kolambu</h4>
+                <p>Prawns simmered in tangy, spicy coastal-style curry.</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type nonveg">NON-VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 1 Person</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹299.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+
+            <div class="menu-items" data-category="lunch">
+                <img src="images3/lunch-6.png" alt="Creamy Chicken Curry">
+                <h4> Creamy Chicken Curry</h4>
+                <p>Boneless chicken cooked in buttery, spiced cream sauce.</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type nonveg">NON-VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 2 Persons</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹269.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+
+            <div class="menu-items" data-category="lunch">
+                <img src="images3/lunch-7.png" alt="Azee’s Lunch Thali">
+                <h4>Azee’s Lunch Thali</h4>
+                <p>A wholesome South Indian platter with variety and flavor.</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type veg">VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 2 Persons</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹289.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+
+            <div class="menu-items" data-category="lunch">
+                <img src="images3/lunch-8.png" alt="Schezwan Fusion Noodles">
+                <h4>Schezwan Fusion Noodles</h4>
+                <p>Chinese-style noodles tossed in fiery schezwan sauce.</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type nonveg">NON-VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 2 Persons</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹299.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+
+            <div class="menu-items" data-category="lunch">
+                <img src="images3/lunch-9.png" alt="Tokyo Hot Soup">
+                <h4> Tokyo Hot Soup</h4>
+                <p>Clear Japanese broth with veggies and a savory base.</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type veg">VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 2 Persons</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹199.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+            
+            <div class="menu-items" data-category="lunch">
+                <img src="images3/lunch-10.png" alt="Chettinad Mutton Tikka">
+                <h4>Chettinad Mutton Tikka</h4>
+                <p>Mutton cooked in bold Chettinad spices with a peppery kick.</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star-half star-rating'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type nonveg">NON-VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 1 Person</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹339.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+            
+            <div class="menu-items" data-category="lunch">
+                <img src="images3/lunch-11.png" alt="Chicken Curry Rice">
+                <h4>Chicken Curry Rice</h4>
+                <p>Plain white rice paired with flavorful, homestyle chicken gravy.</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star-half star-rating'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type nonveg">NON-VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 1 Person</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹229.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+            
+            <!-- Dinner Items -->
+            <div class="menu-items" data-category="dinner">
+                <img src="images2/dinner-1.png" alt="Egg-Chicken Fusion Sandwich">
+                <h4>Egg-Chicken Fusion Sandwich</h4>
+                <p>A tasty blend of egg and chicken packed in grilled bread.</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type nonveg">NON-VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i>1 Person</span> 
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹189.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+
+            <div class="menu-items" data-category="dinner">
+                <img src="images2/dinner-2.png" alt="Midnight Masala Noodles">
+                <h4>Midnight Masala Noodles</h4>
+                <p>Wok-tossed noodles with veggies and bold desi spices.</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type veg">VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 1 Person</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹199.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+
+            <div class="menu-items" data-category="dinner">
+                <img src="images2/dinner-3.png" alt="Desi Cheese Pizza">
+                <h4>Desi Cheese Pizza</h4>
+                <p>Soft crust topped with cheese, sauce, and Indian flavors.</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type veg">VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 1 Person</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹209.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+            
+            <div class="menu-items" data-category="dinner">
+                <img src="images2/dinner-4.png" alt="Crispy French Fries">
+                <h4> Crispy French Fries</h4>
+                <p>Golden fried potato sticks, lightly salted and crunchy.</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star-half star-rating'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type veg">VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 2 Persons</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹239.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+            
+            <div class="menu-items" data-category="dinner">
+                <img src="images2/dinner-5.png" alt="Masala Egg Curry">
+                <h4>Masala Egg Curry</h4>
+                <p>Boiled eggs simmered in spicy tomato-onion gravy.</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type veg">VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 1 Person</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹169.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+            
+            <div class="menu-items" data-category="dinner">
+                <img src="images2/dinner-6.png" alt="Veggie Kurma Bowl">
+                <h4>Veggie Kurma Bowl</h4>
+                <p>Mixed vegetables cooked in creamy, spiced coconut gravy.</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type veg">VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 2 Persons</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹299.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+            <div class="menu-items" data-category="dinner">
+                <img src="images2/dinner-7.png" alt="Chill Fruit Mix">
+                <h4>Chill Fruit Mix</h4>
+                <p>Chilled seasonal fruits tossed with honey and mint.</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type veg">VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 2 Persons</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹219.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+    
+            <div class="menu-items" data-category="dinner">
+                <img src="images2/dinner-8.png" alt="Grilled Chicken Sizzle">
+                <h4>Grilled Chicken Sizzle</h4>
+                <p>Tender chicken grilled with herbs and smoky glaze.</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type veg">VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 4 Persons</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹499.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+    
+            <div class="menu-items" data-category="dinner">
+                <img src="images2/dinner-9.png" alt="Fresh Garden Salad">
+                <h4>Fresh Garden Salad</h4>
+                <p>Crunchy veggies mixed with light dressing and herbs.</p>
+                <div class="menu-ratings">
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bxs-star star-rating'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+                <div class="food-details">
+                    <span class="food-type veg">VEG</span>
+                    <span class="food-persons"><i class='bx bx-user'></i> 2 Persons</span>
+                </div>
+                <div class="menu-footer">
+                    <p class="food-price">₹299.00</p>
+                    <button class="add-btn"><i class='bx bx-plus'></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about-us-section -->
+    <section class="about-us-section" id="about-us-section">
+        <div class="about-us-header">
+            <h2 class="about-title">About Us</h2>
+            <p class="about-intro">
+                <strong>Welcome to Azee Restaurant!</strong> We bring you authentic, flavorful dishes crafted with fresh ingredients 
+                and a passion for delicious food. From sizzling grills to aromatic biryanis, every bite is a delight!
+            </p>
+        </div>
+    
+        <div class="about-us-content">
+            <div class="restaurant-pic">
+                <img src="images/rest pic.jpeg" alt="Restaurant Image" class="rest-img">
+            </div>
+    
+            <div class="restaurant-details">
+                <p class="about-description">
+                    Azee Restaurant was established in 2020 with the mission to create memorable dining experiences inspired by family recipes and culinary traditions.We pride ourselves on serving fresh,authentic and flavorful dishes.
+                </p>
+    
+                <p class="about-specialties"><strong>Our Specialties:</strong></p>
+                <ul class="para">
+                    <li class="kutty-para">>>> Sizzling Tandoori Kebabs</li>
+                    <li class="kutty-para">>>> Signature Crispy Chicken Fry</li>
+                    <li class="kutty-para">>>> Homemade Desserts & Beverages</li>
+                </ul>
+    
+                <p class="about-mission" id="para"><strong>Mission:</strong> Bringing joy to every plate and creating unforgettable memories.</p>
+    
+                <p class="about-experience" id="para"><strong>Experience:</strong> Enjoy a cozy ambience, exceptional service, and mouthwatering flavors.</p>
+    
+                <p class="restaurant-address"><strong>Visit Us At:</strong></p>
+                <p class="para">123 Azee Street, Foodie Town, Chennai-600001, Tamil Nadu, India</p>
+    
+                <a href="#menu-section" class="btn-explore-menu">Explore Our Menu</a>
+            </div>
+        </div>
+        <div class="about-us-main">
+            <div class="about-banners">
+                <div class="about-img"><img src="images/about-chef.png" alt=""></div>
+                <h4>Master Chefs</h4>
+                <p>Skilled chefs who prepare every dish with expertise and precision.</p>
+            </div>
+            <div class="about-banners">
+                <div class="about-img"><img src="images/about-quality food.png" alt=""></div>
+                <h4>Quality Food</h4>
+                <p>Meals made using fresh,top-quality ingredients for rich taste and nutrition.</p>
+            </div>
+            <div class="about-banners">
+                <div class="about-img"><img src="images/about-online order.png" alt=""></div>
+                <h4>Online Order</h4>
+                <p>A convenient option to order your favorite dishes online for home delivery.</p>
+            </div>
+            <div class="about-banners">
+                <div class="about-img"><img src="images/about-service.png" alt=""></div>
+                <h4>24/7 Service</h4>
+                <p>Food service available at all hours to satisfy your cravings anytime.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- client-review-section -->
+    <section class="reviews-section" id="client-review-section">
+        <div class="reviews-container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-img" style="background-image: url('https://randomuser.me/api/portraits/women/43.jpg')"></div>
+                        <div class="reviewer-info">
+                            <h3>Sarah Johnson</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        "The lamb biryani at Azee Restaurant is absolutely divine! The flavors are perfectly balanced and the meat is so tender. The ambiance takes me back to my grandmother's kitchen in Hyderabad."
+                    </p>
+                    <div class="review-date">March 15, 2023</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h3>Michael Chen</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        "I've been coming to Azee for years. Their butter chicken is the best I've had outside of Delhi. The service is always warm and attentive, making every visit special."
+                    </p>
+                    <div class="review-date">January 28, 2023</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-img" style="background-image: url('https://randomuser.me/api/portraits/women/65.jpg')"></div>
+                        <div class="reviewer-info">
+                            <h3>Priya Patel</h3>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        "As a vegetarian, I'm impressed by their extensive menu. The paneer tikka masala and dal makhani are my favorites. The chef even customized a dish for me when I mentioned my preference for less spice!"
+                    </p>
+                    <div class="review-date">February 10, 2023</div>
+                </div>
+            </div>
+            
+            <div class="review-cta">
+                <p>Enjoyed your experience with us?</p>
+                <a href="mailto:abdajees01@gmail.com" class="btn">Leave a Review</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact-section -->
+    <section class="contact-section" id="contact-section">
+        <div class="contact-container">
+            <span class="cp-2">If you have any doubts</span>
+            <h2 class="section-title">Contact me!</h2>
+        </div>
+        <form action="https://formsubmit.co/abdajees01@gmail.com" method="POST">
+            <div class="name-and-mail">
+                <input type="text" name="name" required placeholder="Your Name">
+                <input type="email" name="email" required placeholder="Your Email">
+            </div>
+            <div class="number-and-address">
+                <input type="text" name="address" required placeholder="Your Address">
+                <input type="text" name="phone" required placeholder="Phone Number">
+            </div>
+            <textarea name="message" cols="30" rows="10" required placeholder="Your Message"></textarea>
+            <div class="contact-submit">
+                <button type="submit" class="cc-btn">Send Message</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- footer-section -->
+    <footer class="footer-section" id="footer-section">
+        <div class="footer-content">
+          <div class="footer-left">
+            <a href="#" class="footer-logo">Azee <span class="restuarant">Restaurant</span></a>
+            <p class="footer-desc">
+              Looking to create a stunning, user-friendly website? Let’s turn your ideas into reality with clean design and seamless functionality. I’m passionate about crafting digital experiences that stand out. Ready to collaborate? Let’s connect!
+            </p>
+          </div>
+      
+          <div class="footer-center">
+            <p class="footer-title">Quick Links</p>
+            <ul class="footer-nav">
+              <li><a href="#home-section">Home</a></li>
+              <li><a href="#special-section">Menu</a></li>
+              <li><a href="#about-us-section">About Us</a></li>
+              <li><a href="#client-review-section">Reviews</a></li>
+              <li><a href="#contact-section">Contact Us</a></li>
+              <li><a href="login2.html">Login</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-right">
+            <p class="footer-title">Get In Touch</p>
+            <div class="contact-item">
+              <i class='bx bx-envelope'></i>
+              <a href="mailto:abdajees01@gmail.com">abdajees01@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <i class='bx bx-phone'></i>
+              <a href="tel:+918489677139">+91 8489677139</a>
+            </div>
+            <div class="social-media-footer">
+              <a href="https://www.instagram.com/_abdazee_/" target="_blank" class="linku"><i class='bx bxl-instagram'></i></a>
+              <a href="https://youtube.com/@azeethoughts/" target="_blank" class="linku"><i class='bx bxl-youtube'></i></a>
+              <a href="https://www.linkedin.com/in/abdul-ajees-m/" target="_blank" class="linku"><i class='bx bxl-linkedin'></i></a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2025 Designed & Developed by <strong>Abdul Ajees M</strong></p>
+        </div>
+      </footer>
+      
+    <script src="js files/restaurant.js"></script>
+</body>
+</html>
