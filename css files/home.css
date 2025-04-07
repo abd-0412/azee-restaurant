@@ -1,0 +1,118 @@
+
+/* home-css */
+.home-section{
+    overflow: hidden;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    max-width: 1200px!important;
+    justify-content: center;
+    margin-left: 10%!important;
+    margin-right: 10%!important;
+    max-height: 850px;
+    margin-top: 100px!important;
+}
+.home-img{
+    display: flex;
+    max-width: 500px!important;
+    position: relative;
+}
+.home-img img{
+    width: 500px;
+}
+.home-text-container{
+    display: inline-block;
+}
+.main-txt{
+    position: relative;
+    width: 100%;
+    font-size: 17px;
+    margin: 10px 0!important;
+}
+.meet{
+    color: #f15800;
+    display: inline;
+}
+.taste{
+    display: inline-block;
+    color:#5d2200;
+    font-weight: 700;
+}
+.btn{
+    padding: 5px 10px!important;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50px;
+    margin-top: 10px!important;
+    background-color: #ff9008;
+    color: beige;
+    transition: all .3s;
+}
+.btn:hover{
+    color: #FEF9E1;
+    background-color: #C14600;
+    box-shadow: 0 4px 8px rgba(255, 116, 2, 0.918);
+}
+
+/* home-section */
+@media (max-width: 767px) {
+    .home-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+      margin: 10px auto!important;
+      margin-top: 70px!important;
+      margin-right: 0!important;
+    }
+    .home-img {
+      width: 100%;
+      max-width: 300px !important;
+      margin: 0 auto !important;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      right: 15px;
+    }
+    .home-img img {
+      width: 100%;
+      height: auto;
+    }
+    .home-container{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .home-text-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+    .meet {
+      font-size: 1.5rem !important;
+      line-height: 1.3;
+    }
+    .taste {
+      font-size: 1.3rem !important;
+      margin-top: 5px !important;
+    }
+    .main-txt {
+      font-size: 0.9rem !important;
+      text-align: center;
+      max-width: 90% !important;
+      margin: 10px!important;
+    }
+    .home-contact{
+        display: flex;
+        justify-content: center;
+    }
+    .btn {
+      padding: 8px 25px !important;
+      margin: 5px!important;
+    }
+  }

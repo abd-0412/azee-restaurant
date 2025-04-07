@@ -1,0 +1,203 @@
+/* about-css */
+.about-us-section {
+    margin-top: 50px!important;
+    width: 100%;
+    scroll-margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-us-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 800px;
+}
+
+.about-title {
+    font-family: "Carattere", serif;
+    font-size: 35px;
+    color: #C14600;
+    font-weight: 700;
+}
+
+.about-description {
+    font-size: 15px;
+    color: #000000;
+    text-align: justify;
+    margin-bottom: 10px!important;
+}
+
+.about-us-content {
+    margin-top: 10px!important;
+    display: flex;
+    max-width: 1200px;
+    gap: 30px;
+    justify-content: center; 
+}
+
+.restaurant-pic {
+    max-width: 350px;
+    width: 100%; 
+    text-align: left;
+}
+.rest-img {
+    margin-top: 20px!important;
+    width: 100%;
+    max-width: 400px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 3px solid #f15800;
+    display: block;
+    margin-left: 0;
+}
+.restaurant-details {
+    max-width: 600px;
+    margin-top: 40px!important;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+}
+.about-specialties, .restaurant-address{
+    margin-bottom: -6px!important;
+}
+
+ul {
+    list-style: circle;
+    padding-left: 20px;
+}
+.kutty-para{
+    margin-left: 50px!important;
+}
+#para,.para{
+    color: #000000;
+}
+strong{
+    font-weight: 600;
+    color: #8b0000;
+}
+.btn-explore-menu{
+    padding: 8px 10px!important;
+    font-size: 14px;
+    width: 150px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 50px;
+    background-color: #d37400;
+    color: rgb(255, 255, 255);
+    transition: all .3s;
+}
+.btn-explore-menu:hover{
+    color: #FEF9E1;
+    background-color: #C14600;
+    box-shadow: 0 4px 8px rgba(255, 116, 2, 0.918);
+}
+.about-us-main{
+    margin: 40px 20px!important;
+    display: flex;
+    gap: 30px!important;
+}
+.about-banners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #c0cbff;
+    width: 250px;
+    padding: 15px!important;
+    border-radius: 15px;
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.about-img {
+    width: 60px;
+    height: 60px;
+    background-color: #ff5900;
+    padding: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    transition: all .3s;
+}
+    
+.about-img img {
+    width: 40px;
+    height: 40px;
+}    
+.about-banners h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0 5px 0!important;
+    color: #802f00;
+}
+.about-banners:hover {
+    background-color: #f8b451;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2);
+}
+.about-banners p{
+    font-size: 14px;
+    color: #000000;
+}
+.about-img:hover {
+    background-color: #f04f4f;
+    box-shadow: 2px 10px 15px rgba(0, 0, 0, 0.2); 
+}
+
+/* about-section */
+@media (max-width: 768px) {
+    .about-us-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .restaurant-pic,
+    .restaurant-details {
+        text-align: center;
+    }
+    .about-us-content .restaurant-pic{
+        margin: 0!important;
+        width: 80%;
+    }
+    .about-intro{
+        font-size: 14px;
+        margin: 0 15px!important;
+    }
+
+    .restaurant-details {
+        text-align: center;
+        align-items: center;
+        margin: 15px!important;
+        margin-top: 0px !important;
+    }
+
+    .kutty-para {
+        margin-left: 0!important;
+        text-align: left;
+    }
+
+    .btn-explore-menu {
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .about-us-main {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px!important;
+        margin: 10px 20px!important;
+    }
+
+    .about-banners {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    .about-us-section{
+        margin-top: 30px!important;
+    }
+}
