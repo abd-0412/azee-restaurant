@@ -162,8 +162,16 @@
     color: #adb5bd;
     font-size: 0.9rem;
   }
-  .footer-bottom p{
+  .footer-bottom p,.footer-bottom a{
     margin-top: 10px!important;
+  }
+  .footer-bottom a{
+    color: #e9c46a;
+    
+  }
+  .footer-bottom a:hover{
+    color: #ffb700;
+    transition: all 0.3s;
   }
   .footer-bottom strong {
     color: #e9c46a;
@@ -221,7 +229,7 @@
     .social-media-footer {
       justify-content: center;
     }
-    .footer-bottom p{
+    .footer-bottom p,.footer-bottom a{
         font-size: 13px;
         margin-top: 10px!important;
     }
